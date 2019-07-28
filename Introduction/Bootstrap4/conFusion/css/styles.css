@@ -65,3 +65,17 @@ header, ol .breadcrumb{
     bottom: 0px;
     z-index: 1;
 }
+.modal-header{
+    background-color: #512DA8;
+    color: white
+}
+.modal-body{
+    background-color: #D1C4E9
+}
+.modal-header .close{
+    color: #D1C4E9;
+    cursor: pointer;
+}
+.sign-in-link{
+    cursor: pointer;
+}

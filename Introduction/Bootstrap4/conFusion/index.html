@@ -48,7 +48,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a onclick="openLoginModal()" class="sign-in-link">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
@@ -61,7 +61,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" onclick="closeLoginModal()">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -98,7 +98,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve a Table </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" onclick="closeReservationModal()">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -177,7 +177,7 @@
                 <div class="col-12 col-sm-3 align-self-center">
                     <!-- <img src="img/logo.png" class="img-fluid"> -->
 
-                    <a data-toggle="modal" data-target="#reservationModal" class="btn btn-warning btn-block" data-placement="bottom">
+                    <a class="btn btn-warning btn-block" onclick="openReservationModal()">
                         Reserve Table
                     </a>
                 </div>
@@ -250,7 +250,7 @@
                         <span id="carousel-button-icon" class="fa fa-pause"></span>
                     </button>
                 </div>
-                
+
             </div>
 
         </div>
@@ -409,7 +409,20 @@
             });
         });
 
+        openReservationModal = function () {
+            $('#reservationModal').modal('show')
+        }
+        closeReservationModal = function () {
+            $('#reservationModal').modal('hide')
+        }
+        openLoginModal = function () {
+            $('#loginModal').modal('show')
+        }
+        closeLoginModal = function () {
+            $('#loginModal').modal('hide')
+        }
 
+        cla
 
 
     </script>
